@@ -4,7 +4,7 @@ function reverse_a_number(n)
 	n = n + "";
 	return n.split("").reverse().join("");
 }
-console.log(Number(reverse_a_number(32243)));
+alert(Number(reverse_a_number(32243)));
 
 
 // Checking a Palindrome or not? 
@@ -12,14 +12,14 @@ function check_Palindrome(str_entry){
 	   var cstr = str_entry.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
 		var ccount = 0;
 		if(cstr==="") {
-			console.log("Nothing found!");
+			alert("Nothing found!");
 			return false;
 		}
 		if ((cstr.length) % 2 === 0) {
 			ccount = (cstr.length) / 2;
 		} else {
 			if (cstr.length === 1) {
-				console.log("Entry is a palindrome.");
+				alert("Entry is a palindrome.");
 				return true;
 			} else {
 				ccount = (cstr.length - 1) / 2;
@@ -27,11 +27,11 @@ function check_Palindrome(str_entry){
 		}
 		for (var x = 0; x < ccount; x++) {
 			if (cstr[x] != cstr.slice(-1-x)[0]) {
-				console.log("Entry is not a palindrome.");
+				alert("Entry is not a palindrome.");
 				return false;
 			}
 		}
-		console.log("The entry is a palindrome.");
+		alert("The entry is a palindrome.");
 		return true;
 	}
 	check_Palindrome('madam');
@@ -63,7 +63,7 @@ for (var i = 0; i < slent ; i++)
         combi.push(temp);
     }
 }
-  console.log(combi.join("\n"));
+  alert(combi.join("\n"));
 }
 
 substrings("dog");
@@ -73,7 +73,7 @@ function alphabet_order(str)
   {
 return str.split('').sort().join('');
   }
-console.log(alphabet_order("webmaster"));
+alert(alphabet_order("webmaster"));
 
 // Converting the first letter of each word of the string in upper case.
 function uppercase(str)
@@ -86,7 +86,7 @@ function uppercase(str)
   }
   return newarray1.join(' ');
 }
-console.log(uppercase("the quick brown fox"));
+alert(uppercase("the quick brown fox"));
 
 // Finding longest word in the string
 function find_longest_word(str)
@@ -103,7 +103,7 @@ function find_longest_word(str)
   }
   return result;
 }
-console.log(find_longest_word('Web Development Tutorial'));
+alert(find_longest_word('Web Development Tutorial'));
 
 // Counting Vowel in the string
 function vowel_count(str1)
@@ -121,7 +121,7 @@ function vowel_count(str1)
   }
   return vcount;
 }
-console.log(vowel_count("The quick brown fox"));
+alert(vowel_count("The quick brown fox"));
 
 // checking a number is prime or not
 function test_prime(n)
@@ -147,7 +147,7 @@ function test_prime(n)
   }
 }
 
-console.log(test_prime(37));
+alert(test_prime(37));
 
 // accepting argument & returning type
 function detect_data_type(value)
@@ -167,9 +167,9 @@ if (typeof value === "object" || typeof value === "function")
     
     return typeof value;
 }
-console.log(detect_data_type(12));
-console.log(detect_data_type('w3resource'));
-console.log(detect_data_type(false));
+alert(detect_data_type(12));
+alert(detect_data_type('w3resource'));
+alert(detect_data_type(false));
 
 // finding lowerst & second greatest numbers
 function Second_Greatest_Lowest(arr_num)
@@ -192,5 +192,5 @@ function Second_Greatest_Lowest(arr_num)
   return result.join(',');
   }
 
-console.log(Second_Greatest_Lowest([1,2,3,4,5]));
+alert(Second_Greatest_Lowest([1,2,3,4,5]));
 
