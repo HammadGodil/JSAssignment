@@ -1,14 +1,13 @@
 // Reversing a number
-function reverse_a_number(n)
-{
-	n = n + "";
-	return n.split("").reverse().join("");
+function reverse(num) {
+	num = num.toString();
+	return num.split("").reverse().join("");
 }
-alert(Number(reverse_a_number(32243)));
+alert(Number(reverse(32243)));
 
 
 // Checking a Palindrome or not? 
-function check_Palindrome(str_entry){
+function check_Palindrome(str_entry) {
 	   var cstr = str_entry.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
 		var ccount = 0;
 		if(cstr==="") {
