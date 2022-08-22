@@ -1,10 +1,10 @@
 // Reversing a number
 // function reverse(num) {
 // 	num = num.toString();
-// 	return num.split("").reverse().join("");
+//  num = num.split("");
+// 	return num.reverse().join("");
 // }
 // alert(Number(reverse(32243)));
-
 
 // // Checking a Palindrome or not? 
 // function check_Palindrome(str_entry) {
@@ -68,22 +68,23 @@
 // substrings("dog");
 
 // Checking alphabetical order
-// function alphabet_order(str) {
-// return str.split('').sort().join('');
+// function ordering(alpha) {
+//   alpha = alpha.split('')
+// return alpha.sort().join('');
 // }
-// alert(alphabet_order("webmaster"));
+// alert(ordering("webmaster"));
 
 // Converting the first letter of each word of the string in upper case.
-function uppercase(str) {
-  var array1 = str.split(' ');
-  var newarray1 = [];
+// function uppercase(first) {
+//   var split = first.split(' ');
+//   var capitalized = [];
     
-  for(var x = 0; x < array1.length; x++){
-    newarray1.push(array1[x].charAt(0).toUpperCase()+array1[x].slice(1));
-  }
-  return newarray1.join(' ');
-}
-alert(uppercase("the quick brown fox"));
+//   for(var x = 0; x < split.length; x++){
+//     capitalized.push(split[x].charAt(0).toUpperCase()+split[x].slice(1));
+//   }
+//   return capitalized.join(' ');
+// }
+// alert(uppercase("the quick brown fox"));
 
 // // Finding longest word in the string
 // function find_longest_word(str) {
@@ -102,21 +103,19 @@ alert(uppercase("the quick brown fox"));
 // alert(find_longest_word('Web Development Tutorial'));
 
 // // Counting Vowel in the string
-// function vowel_count(str1) {
-//   var vowel_list = 'aeiouAEIOU';
-//   var vcount = 0;
-  
-//   for(var x = 0; x < str1.length ; x++)
-//   {
-//     if (vowel_list.indexOf(str1[x]) !== -1)
-//     {
-//       vcount += 1;
-//     }
-  
-//   }
-//   return vcount;
-// }
-// alert(vowel_count("The quick brown fox"));
+function vowel_count(str1) {
+  var vowel_list = 'aeiouAEIOU';
+  var vcount = 0;
+  for(var x = 0; x < str1.length ; x++)
+  {
+    if (vowel_list.indexOf(str1[x]) !== -1)
+    {
+      vcount += 1;
+    }
+  }
+  return vcount;
+}
+alert(vowel_count("The quick brown fox"));
 
 // // checking a number is prime or not
 // function test_prime(n) {
