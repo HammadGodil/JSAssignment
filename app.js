@@ -102,43 +102,36 @@
 // }
 // alert(find_longest_word('Web Development Tutorial'));
 
-// // Counting Vowel in the string
-function vowel_count(str1) {
-  var vowel_list = 'aeiouAEIOU';
+// // Counting number of Vowels in the string
+function vowelCount(sentence) {
+  var vowels = 'aeiouAEIOU';
   var vcount = 0;
-  for(var x = 0; x < str1.length ; x++)
-  {
-    if (vowel_list.indexOf(str1[x]) !== -1)
-    {
+  for(var x = 0; x < sentence.length ; x++) {
+    if (vowels.indexOf(sentence[x]) !== -1) {
       vcount += 1;
     }
   }
   return vcount;
 }
-alert(vowel_count("The quick brown fox"));
+alert(vowelCount("The quick brown fox"));
 
 // // checking a number is prime or not
-// function test_prime(n) {
-//   if (n===1)
-//   {
+// function prime(num) {
+//   num = +prompt("Please input a number")
+//   if (num === 1) {
 //     return false;
-//   }
-//   else if(n === 2)
-//   {
+//   } else if(num === 2) {
 //     return true;
-//   }else
-//   {
-//     for(var x = 2; x < n; x++)
-//     {
-//       if(n % x === 0)
-//       {
+//   } else {
+//     for(var x = 2; x < num; x++) {
+//       if(num % x === 0) {
 //         return false;
 //       }
 //     }
 //     return true;  
 //   }
 // }
-// alert(test_prime(37));
+// alert(prime(53));
 
 // // accepting argument & returning type
 // function detect_data_type(value) {
