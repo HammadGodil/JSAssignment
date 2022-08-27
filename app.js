@@ -106,14 +106,15 @@
 function vowelCount(sentence) {
   var vowels = 'aeiouAEIOU';
   var vcount = 0;
-  for(var x = 0; x < sentence.length ; x++) {
-    if (vowels.indexOf(sentence[x]) !== -1) {
+  for(var i = 0; i < sentence.length ; i++) {
+    if (vowels.indexOf(sentence[i]) !== -1) {
       vcount += 1;
     }
   }
   return vcount;
 }
-alert(vowelCount("The quick brown fox"));
+var numberOfVowel = vowelCount("The quick brown fox")
+alert(numberOfVowel);
 
 // // checking a number is prime or not
 // function prime(num) {
@@ -131,7 +132,7 @@ alert(vowelCount("The quick brown fox"));
 //     return true;  
 //   }
 // }
-// alert(prime(53));
+// alert(prime());
 
 // // accepting argument & returning type
 // function detect_data_type(value) {
