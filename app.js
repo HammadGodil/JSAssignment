@@ -103,18 +103,18 @@
 // alert(find_longest_word('Web Development Tutorial'));
 
 // // Counting number of Vowels in the string
-function vowelCount(sentence) {
-  var vowels = 'aeiouAEIOU';
-  var vcount = 0;
-  for(var i = 0; i < sentence.length ; i++) {
-    if (vowels.indexOf(sentence[i]) !== -1) {
-      vcount += 1;
-    }
-  }
-  return vcount;
-}
-var numberOfVowel = vowelCount("The quick brown fox")
-alert(numberOfVowel);
+// function vowelCount(sentence) {
+//   var vowels = 'aeiouAEIOU';
+//   var vcount = 0;
+//   for(var i = 0; i < sentence.length ; i++) {
+//     if (vowels.indexOf(sentence[i]) !== -1) {
+//       vcount += 1;
+//     }
+//   }
+//   return vcount;
+// }
+// var numberOfVowel = vowelCount("The quick brown fox")
+// alert(numberOfVowel);
 
 // // checking a number is prime or not
 // function prime(num) {
@@ -124,8 +124,8 @@ alert(numberOfVowel);
 //   } else if(num === 2) {
 //     return true;
 //   } else {
-//     for(var x = 2; x < num; x++) {
-//       if(num % x === 0) {
+//     for(var i = 2; i < num; i++) {
+//       if(num % i === 0) {
 //         return false;
 //       }
 //     }
@@ -135,27 +135,25 @@ alert(numberOfVowel);
 // alert(prime());
 
 // // accepting argument & returning type
-// function detect_data_type(value) {
+// function dataType(value) {
 // var dtypes = [Function, RegExp, Number, String, Boolean, Object], x, len;
-    
 // if (typeof value === "object" || typeof value === "function") 
 //     {
-//      for (x = 0, len = dtypes.length; x < len; x++) 
+//      for (i = 0, len = dtypes.length; i < len; i++) 
 //      {
-//             if (value instanceof dtypes[x])
+//             if (value instanceof dtypes[i])
 //             {
-//                 return dtypes[x];
+//                 return dtypes[i];
 //             }
 //       }
 //     }
-    
 //     return typeof value;
 // }
-// alert(detect_data_type(12));
-// alert(detect_data_type('w3resource'));
-// alert(detect_data_type(false));
+// alert(dataType(12));
+// alert(dataType('w3resource'));
+// alert(dataType(false));
 
-// // finding lowerst & second greatest numbers
+// // finding lowest & second greatest numbers
 // function Second_Greatest_Lowest(arr_num) {
 //   arr_num.sort(function(x,y)
 //            {
